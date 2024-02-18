@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container p-2  my-2">
+      <div class="row">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 bg-primary">
+          <div class="p-2" id="display">
+            <input type="text" class="w-100 p-2" style="font-size:30px;" readonly/>
+          </div>
+
+          <div class="row p-2 row-cols-3">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+
+               <button type="button" class="btn btn-lg bg-light border border-1 border-success text-danger w-100 mb-2"
+               
+               onclick="
+                currentDisplay='';
+                document.querySelector('#display input').value=currentDisplay;
+                ">C</button>
+
+               <button type="button" class="btn btn-lg bg-light border border-1 border-success text-danger w-100 mb-2"
+               onclick="
+                currentDisplay=currentDisplay+'+';
+                document.querySelector('#display input').value=currentDisplay;
+                "
+               >+</button>
+
+               <button type="button" class="btn btn-lg bg-light border border-1 border-success text-danger w-100 mb-2"
+               onclick="
+               currentDisplay=currentDisplay+'-';
+               document.querySelector('#display input').value=currentDisplay;
+               ">-</button>
+
+               <button type="button" class="btn btn-lg bg-light border border-1 border-success text-danger w-100 mb-2"
+               onclick="
+               currentDisplay=currentDisplay+'*';
+               document.querySelector('#display input').value=currentDisplay;
+               "
+               >*</button>
+
+               <button type="button" class="btn btn-lg bg-light border border-1 border-success text-danger w-100 mb-2"
+               onclick="
+               currentDisplay=currentDisplay+'/';
+               document.querySelector('#display input').value=currentDisplay;
+               ">/</button>
+            </div>
+
+            <div class="col-sm-4 col-md-4 col-lg-4">
+
+                <button type="button" class="btn btn-lg bg-light border border-1 border-success text-dark w-100 mb-2"
+                
+                onclick="
+                currentDisplay=currentDisplay+'1';
+                document.querySelector('#display input').value=currentDisplay;">1</button>
+ 
+                <button type="button" class="btn btn-lg bg-light border border-1 border-success text-dark w-100 mb-2"
+                onclick="
+                currentDisplay=currentDisplay+'3';
+                document.querySelector('#display input').value=currentDisplay;
+                "
+                >3</button>
+ 
+                <button type="button" class="btn btn-lg bg-light border border-1 border-success text-dark w-100 mb-2"
+                onclick="
+                currentDisplay=currentDisplay+'5';
+                document.querySelector('#display input').value=currentDisplay;
+                ">5</button>
+ 
+                <button type="button" class="btn btn-lg bg-light border border-1 border-success text-dark w-100 mb-2"
+                onclick="
+                currentDisplay=currentDisplay+'7';
+                document.querySelector('#display input').value=currentDisplay;
+                "
+                >7</button>
+ 
+                <button type="button" class="btn btn-lg bg-light border border-1 border-success text-dark w-100 mb-2"
+                
+                onclick="
+                currentDisplay=currentDisplay+'9';
+                document.querySelector('#display input').value=currentDisplay;
+                ">9</button>
+             </div>
+             <div class=" col-sm-4 col-md-4 col-lg-4">
+
+                <button type="button" class="btn btn-lg bg-light border border-1 border-success text-dark w-100 mb-2"
+                
+                onclick="
+                currentDisplay=currentDisplay+'2';
+                document.querySelector('#display input').value=currentDisplay;
+                ">2</button>
+ 
+                <button type="button" class="btn btn-lg bg-light border border-1 border-success text-dark w-100 mb-2"
+                
+                onclick="
+                currentDisplay=currentDisplay+'4';
+                document.querySelector('#display input').value=currentDisplay;
+                ">4</button>
+ 
+                <button type="button" class="btn btn-lg bg-light border border-1 border-success text-dark w-100 mb-2"
+                
+                onclick="
+                currentDisplay=currentDisplay+'6';
+                document.querySelector('#display input').value=currentDisplay;
+                ">6</button>
+ 
+                <button type="button" class="btn btn-lg bg-light border border-1 border-success text-dark w-100 mb-2"
+                onclick="
+                currentDisplay=currentDisplay+'8';
+                document.querySelector('#display input').value=currentDisplay;
+                "
+                >8</button>
+ 
+                <button type="button" class="btn btn-lg bg-light border border-1 border-success text-dark w-100 mb-2"
+                onclick="
+                currentDisplay=currentDisplay+'0';
+                document.querySelector('#display input').value=currentDisplay;
+                ">0</button>
+             </div>
+
+             <div class=" col-md-4 col-sm-4 col-lg-4">
+                 <button type="button" class="btn btn-lg bg-light border border-1 border-success text-dark w-100 mb-2">
+                  .
+                 </button>
+                 </div>
+
+                 <div class="col-md-4 col-sm-4 col-lg-4">
+                 <button type="button" class="btn btn-lg bg-light border border-1 border-success w-100"
+                 onclick="
+                 currentDisplay=eval(currentDisplay);
+                 document.querySelector('#display input').value=currentDisplay;"
+                 >=</button>
+             </div>
+             <div class="col-md-4 col-sm-4 col-lg-4">
+              <button type="button" class="btn btn-lg bg-light border border-1 border-success w-100 p-2 text-danger">Clear</button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    <script>
+      let currentDisplay='';
+      document.querySelector('#display input').value=CurrentDisplay;
+    </script>
+  </body>
+</html>
